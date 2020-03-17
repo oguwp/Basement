@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Basement | The Ultimate Student Bar</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--/ Nav Star /-->
+    <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+        <div class="container">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a class="navbar-brand text-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rundtur">Tables</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="https://www.facebook.com/pg/BasementBAAA"><i class="fa fa-facebook fafa"></i></a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="#"><i class="fa fa-instagram fafa"></i></a>
+        </div>
+    </nav>
+    <!--/ Nav End /-->
+
+    <!--/ Slider Start /-->
+    <div class="intro intro-carousel" id="home">
+        <div id="carousel" class="owl-carousel owl-theme">
+            <div class="carousel-item-a intro-item bg-image" style="background-image: url(img/slide-1.png)">
+                <div class="overlay overlay-a"></div>
+                <div class="intro-content display-table">
+                    <div class="table-cell">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="intro-body">
+                                        <p class="intro-title-top">Opening Hours this week</p>
+                                        <h1 class="intro-title mb-4">
+                                            <span class="color-b">CLOSED </span> Due
+                                            <br> to Corona Virus</h1>
+                                        <p class="intro-subtitle intro-price">
+                                            <a href="#"><span class="price-a btnslide">Opening 23 March!</span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item-a intro-item bg-image" style="background-image: url(img/slide-2.png)">
+                <div class="overlay overlay-a"></div>
+                <div class="intro-content display-table">
+                    <div class="table-cell">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="intro-body">
+                                        <p class="intro-title-top">JOIN US AT OUR</p>
+                                        <h1 class="intro-title mb-4">
+                                            <span class="color-b">Beer </span> Pong
+                                            <br> Tournament</h1>
+                                        <p class="intro-subtitle intro-price">
+                                            <a href="#"><span class="price-a btnslide">Sign Up 29 February</span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ Slider end /-->
+    
+    <br>
+    <br>
+    <div class="container">
+        <h2 class="title-a mb-4">Get Newest Prices</h2>
+        <button id="getBeer" class="btn btn-info mr-4">See Beer Prices <span class="ion-ios-arrow-forward"></span></button>
+        <button id="getDrinks" class="btn btn-info mr-4">See Drink Prices <span class="ion-ios-arrow-forward"></span></button>
+        <button id="getRTD" class="btn btn-info mr-4">See RTD Prices <span class="ion-ios-arrow-forward"></span></button>
+        <button id="getShots" class="btn btn-info mr-4">See Shot Prices <span class="ion-ios-arrow-forward"></span></button>
+        <hr>
+        <div id="output"></div>
+    </div>
+
+    <!--/ Products Start /-->
+    <section class="section-property section-t8" id="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-wrap d-flex justify-content-between">
+                        <div class="title-box">
+                            <h2 class="title-a">Latest Products</h2>
+                        </div>
+                        <div class="title-link">
+                            <a href="#">All Products
+                                <span class="ion-ios-arrow-forward"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="property-carousel" class="owl-carousel owl-theme">
+                <div class="carousel-item-b">
+                    <div class="card-box-a card-shadow">
+                        <div class="img-box-a">
+                            <img src="img/beer.jpg" alt="" class="img-a img-fluid">
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay-a-content">
+                                <div class="card-header-a">
+                                    <h2 class="card-title-a">
+                                        <a href="#">Beer</a>
+                                    </h2>
+                                </div>
+                                <div class="card-body-a">
+                                    <div class="price-box d-flex">
+                                        <a href="#"><span class="price-a">Fra 20 DKK</span></a>
+                                    </div>
+                                </div>
+                                <div class="card-footer-a">
+                                    <ul class="card-info d-flex justify-content-around">
+                                        <li>
+                                            <h4 class="card-info-title">1/4 Litre</h4>
+                                            <span>15,-</span>
+                                        </li>
+                                        <li>
+                                            <h4 class="card-info-title">1/2 Litre</h4>
+                                            <span>25,-</span>
+                                        </li>
+                                        <li>
+                                            <h4 class="card-info-title">1 Litre</h4>
+                                            <span>45,-</span>
+                                        </li>
+                                        <li>
+                                            <h4 class="card-info-title">Pitcher</h4>
+                                            <span>80,-</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item-b">
+                    <div class="card-box-a card-shadow">
+                        <div class="img-box-a">
+                            <img src="img/drinks.jpg" alt="" class="img-a img-fluid">
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay-a-content">
+                                <div class="card-header-a">
+                                    <h2 class="card-title-a">
+                                        <a href="#">Cocktails</a>
+                                    </h2>
+                                </div>
+                                <div class="card-body-a">
+                                    <div class="price-box d-flex">
+                                        <a href="#"><span class="price-a">Fra 40 DKK</span></a>
+                                    </div>
+                                </div>
+                                <div class="card-footer-a">
+                                    <ul class="card-info d-flex justify-content-around">
+                                        <li>
+                                            <h4 class="card-info-title">1 Cocktail</h4>
+                                            <span>40,-</span>
+                                        </li>
+                                        <li>
+                                            <h4 class="card-info-title">2 Cocktails</h4>
+                                            <span>70,-</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item-b">
+                    <div class="card-box-a card-shadow">
+                        <div class="img-box-a">
+                            <img src="img/filur.jpg" alt="" class="img-a img-fluid">
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay-a-content">
+                                <div class="card-header-a">
+                                    <h2 class="card-title-a">
+                                        <a href="#">Special Drinks</a>
+                                    </h2>
+                                </div>
+                                <div class="card-body-a">
+                                    <div class="price-box d-flex">
+                                        <a href="#"><span class="price-a">Fra 30 DKK</span></a>
+                                    </div>
+                                </div>
+                                <div class="card-footer-a">
+                                    <ul class="card-info d-flex justify-content-around">
+                                        <li>
+                                            <h4 class="card-info-title">Filur | Isbjørn | Kung Fu</h4>
+                                            <span>30,-</span>
+                                        </li>
+                                        <li>
+                                            <h4 class="card-info-title">Pitcher</h4>
+                                            <span>130,-</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item-b">
+                    <div class="card-box-a card-shadow">
+                        <div class="img-box-a">
+                            <img src="img/shots.jpg" alt="" class="img-a img-fluid">
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay-a-content">
+                                <div class="card-header-a">
+                                    <h2 class="card-title-a">
+                                        <a href="#">Shots</a>
+                                    </h2>
+                                </div>
+                                <div class="card-body-a">
+                                    <div class="price-box d-flex">
+                                        <a href="#"><span class="price-a">Fra 10 DKK</span></a>
+                                    </div>
+                                </div>
+                                <div class="card-footer-a">
+                                    <ul class="card-info d-flex justify-content-around">
+                                        <li>
+                                            <h4 class="card-info-title">Gajol</h4>
+                                            <span>10,-</span>
+                                        </li>
+                                        <li>
+                                            <h4 class="card-info-title">Regular</h4>
+                                            <span>15,-</span>
+                                        </li>
+                                        <li>
+                                            <h4 class="card-info-title">Lux</h4>
+                                            <span>20,-</span>
+                                        </li>
+                                        <li>
+                                            <h4 class="card-info-title">Special</h4>
+                                            <span>30/40,-</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item-b">
+                    <div class="card-box-a card-shadow">
+                        <div class="img-box-a">
+                            <img src="img/tempt.jpg" alt="" class="img-a img-fluid">
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-overlay-a-content">
+                                <div class="card-header-a">
+                                    <h2 class="card-title-a">
+                                        <a href="#">RTD</a>
+                                    </h2>
+                                </div>
+                                <div class="card-body-a">
+                                    <div class="price-box d-flex">
+                                        <a href="#"><span class="price-a">Fra 15 DKK</span></a>
+                                    </div>
+                                </div>
+                                <div class="card-footer-a">
+                                    <ul class="card-info d-flex justify-content-around">
+                                        <li>
+                                            <h4 class="card-info-title">Tempt</h4>
+                                            <span>25,-</span>
+                                        </li>
+                                        <li>
+                                            <h4 class="card-info-title">Sodas</h4>
+                                            <span>15,-</span>
+                                        </li>
+                                        <li>
+                                            <h4 class="card-info-title">Energy</h4>
+                                            <span>25,-</span>
+                                        </li>
+                                        <li>
+                                            <h4 class="card-info-title">Glass Wine</h4>
+                                            <span>30,-</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Products End /-->
+
+    <!--/ 3D Start /-->
+    <section class="section-agents section-t8" id="rundtur">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-wrap d-flex justify-content-between">
+                        <div class="title-box">
+                            <h2 class="title-a bb">What table would you like to reserve?</h2>
+                            <br>
+                            <iframe src="https://my.matterport.com/show/?m=Lu8V2q29ju9" width="1200" height="500" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ 3D End /-->
+
+    <!--/ Reviews Start /-->
+    <section class="section-testimonials section-t8 nav-arrow-a" id="reviews">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-wrap d-flex justify-content-between">
+                        <div class="title-box">
+                            <h2 class="title-a">Reviews</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="testimonial-carousel" class="owl-carousel owl-arrow">
+                <div class="carousel-item-a">
+                    <div class="testimonials-box">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="testimonial-img">
+                                    <img src="img/review1.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="testimonial-ico">
+                                    <span class="ion-ios-quote"></span>
+                                </div>
+                                <div class="testimonials-content">
+                                    <p class="testimonial-text">
+                                        Stedet hvor man kan mødes med andre end dem fra ens studie. Dygtigt personale og mange arrangementer.
+                                    </p>
+                                </div>
+                                <div class="testimonial-author-box">
+                                    <img src="img/review1mini.jpg" alt="" class="testimonial-avatar">
+                                    <h5 class="testimonial-author">Rose Olesen</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item-a">
+                    <div class="testimonials-box">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="testimonial-img">
+                                    <img src="img/review2.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="testimonial-ico">
+                                    <span class="ion-ios-quote"></span>
+                                </div>
+                                <div class="testimonials-content">
+                                    <p class="testimonial-text">
+                                        Intet mindre end et fantastisk sted! Skønt personale, gode priser og hyggelig atmosfære!!
+                                    </p>
+                                </div>
+                                <div class="testimonial-author-box">
+                                    <img src="img/review2mini.jpg" alt="" class="testimonial-avatar">
+                                    <h5 class="testimonial-author">Pernille Stig</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item-a">
+                    <div class="testimonials-box">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="testimonial-img">
+                                    <img src="img/review3.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="testimonial-ico">
+                                    <span class="ion-ios-quote"></span>
+                                </div>
+                                <div class="testimonials-content">
+                                    <p class="testimonial-text">
+                                        Rasmus giver god service!
+                                    </p>
+                                </div>
+                                <div class="testimonial-author-box">
+                                    <img src="img/review3mini.jpg" alt="" class="testimonial-avatar">
+                                    <h5 class="testimonial-author">Viggo Klint Bastegaard</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Testimonials End /-->
+
+    <!--/ Contact Start /-->
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 section-t8" id="contact">
+                    <h2 class="title-a">Contact Us</h2>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form action="#" method="post" role="form" class="php-email-form">
+                                <div class="row">
+                                    <div class="col-md-12 mb-3">
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control form-control-lg form-control-a" placeholder="Your Full Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                                            <div class="validate"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <input name="email" type="email" class="form-control form-control-lg form-control-a" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                                            <div class="validate"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-group">
+                                            <input name="email" type="email" class="form-control form-control-lg form-control-a" placeholder="Confirm Email" data-rule="email" data-msg="Please enter a valid email">
+                                            <div class="validate"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mb-3">
+                                        <div class="form-group">
+                                            <input name="phone" type="phone" class="form-control form-control-lg form-control-a" placeholder="Your Number" data-rule="phone" data-msg="Please enter a valid number">
+                                            <div class="validate"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mb-3">
+                                        <div class="form-group">
+                                            <input type="text" name="subject" class="form-control form-control-lg form-control-a" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                                            <div class="validate"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" name="message" cols="45" rows="8" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                            <div class="validate"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="btn btn-a">Send Message</button>
+                                    </div>
+                                    <br>
+                                    <br>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact-->
+
+    <!--/ footer Start /-->
+    <section class="section-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div class="widget-a">
+                        <div class="w-header-a">
+                            <h3 class="w-title-a text-brand">BASEMENT</h3>
+                        </div>
+                        <div class="w-body-a">
+                            <p class="w-text-a color-text-a">
+                                Basement is the official student bar at Business Academy Aarhus. We have a wide range of beverages to offer at student friendly prices, from beers to cocktails. Get comfortable in the lounge area, hang out or play something!
+                                <br><br>
+                                From board games to beer pong and dice games. The “after school” bar is open from 11.30 on Thursdays and Fridays. (we close when there’s no more people to keep activated!)
+                                <br><br>
+                                In general you can always use Basement for group work activities monday to friday from 08:00 - 16:00.
+                                If you want to make an event or have a party for your fellow students, you can use Basement as your location.
+                                <br><br>
+                                Basement can be adjusted to meet the needs of different type of events, as we can change the lighting, speakers/music and move around the interior.
+                            </p>
+                        </div>
+                        <div class="w-footer-a">
+                            <ul class="list-unstyled">
+                                <li class="color-a">
+                                    <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:72286059"> 72 28 60 59</a>
+                                </li>
+                                <li class="color-a">
+                                    <i class="fa fa-map" aria-hidden="true"></i> Sønderhøj 30, Viby J
+                                </li>
+                                <li class="color-a">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:sogr@eaaa.dk"> sogr@eaaa.dk</a> </li>
+                            </ul>
+                        </div>
+                        <center>
+                            <img src="img/logo.png" class="img-a img-fluid" alt="logo">
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="socials-a">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/pg/BasementBAAA">
+                                    <i class="fa fa-facebook fafa" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <i class="fa fa-instagram fafa" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="copyright-footer">
+                        <p class="copyright color-text-a">
+                            &copy; All Rights Reserved |
+                            <span class="color-a">Oguzhan Dumlu | MDU-E19E</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/ Footer End /-->
+    
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    
+    <!-- Popup Wheel -->
+    <script type="text/javascript">
+    (function(e,a){
+        var t,r=e.getElementsByTagName("head")[0],c=e.location.protocol;
+        t=e.createElement("script");t.type="text/javascript";
+        t.charset="utf-8";t.async=!0;t.defer=!0;
+        t.src=c+"//front.optimonk.com/public/"+a+"/js/preload.js";r.appendChild(t);
+    })(document,"102313");
+    </script>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/popper/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/scrollreveal/scrollreveal.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+</body></html>
