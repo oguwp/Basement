@@ -1,8 +1,8 @@
 # Basement
 - HTML
 - CSS
-- JS
-- JSON
+- JAVASCRIPT
+- JSON / API
 - JQUERY
 - Plugins
 
